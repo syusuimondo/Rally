@@ -1,0 +1,33 @@
+﻿2020/01/13 13:05:47 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\配信\Rally_設定\GameProg.vcxproj" (build ターゲット)。
+       プロジェクト ファイルに ToolsVersion="15.0" が含まれています。このツールセットが不明であるか、存在しない可能性があります。その場合は、適切なバージョンの MSBuild をインストールして解決するか、ビルドがポリシー上の理由により特定の ToolsVersion を使用するよう強制されている可能性があります。プロジェクトを ToolsVersion="4.0" として扱います。詳細については、http://go.microsoft.com/fwlink/?LinkId=291333 を参照してください。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Debug\GameProg.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I./DxLib/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt title.cpp
+         title.cpp
+       ManifestResourceCompile:
+         すべての出力が最新のものです。
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\配信\Rally_設定\Debug\GameProg.exe" /INCREMENTAL /NOLOGO /LIBPATH:./DxLib/ kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\GameProg.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\配信\Rally_設定\Debug\GameProg.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\配信\Rally_設定\Debug\GameProg.lib" /MACHINE:X86 /SAFESEH:NO Debug\GameProg.exe.embed.manifest.res
+         Debug\enemy.obj
+         Debug\map.obj
+         Debug\music.obj
+         Debug\option.obj
+         Debug\player.obj
+         Debug\test.obj
+         Debug\title.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\GameProg.exe.embed.manifest" /manifest Debug\GameProg.exe.intermediate.manifest
+         すべての出力が最新のものです。
+       LinkEmbedManifest:
+         すべての出力が最新のものです。
+         GameProg.vcxproj -> C:\配信\Rally_設定\Debug\GameProg.exe
+       FinalizeBuildStatus:
+         ファイル "Debug\GameProg.unsuccessfulbuild" を削除しています。
+         "Debug\GameProg.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\配信\Rally_設定\GameProg.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.95

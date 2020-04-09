@@ -17,6 +17,7 @@ static int player_y;
 static int player_imag[4];
 static int player_i;
 static int player_f;
+static int player_re;
 static int countp;
 int Key[256];
 int gpUpdateKey(){
@@ -40,27 +41,32 @@ void player_init(){//プレイヤーの初期設定
 	player_y = STARTY;
 	player_i = RIGHT;
 	player_f = 0;
+	player_re = LoadGraph("画像/sousa.png");
 }
 void player_updata(){//プレイヤーの移動
-	if( Key[ KEY_INPUT_F ]  == 1&& map_kensa(player_x+1,player_y) != 1 ){      //右移動
+	if( Key[ KEY_INPUT_D ]  == 1&& map_kensa(player_x+1,player_y) != 1 ){      //右移動
 		player_x++;
 		map_henka(player_x-1,player_y);
 		player_i = RIGHT;
+		music_draw(5);
 	}
 	if( Key[ KEY_INPUT_A ]  == 1&& map_kensa(player_x-1,player_y) != 1 ){      //左移動
 		player_x--;
 		map_henka(player_x+1,player_y);
 		player_i = LEFT;
+		music_draw(5);
 	}
 	if( Key[ KEY_INPUT_S ]  == 1&& map_kensa(player_x,player_y+1) != 1 ){      //下移動
 		player_y++;
 		map_henka(player_x,player_y-1);
 		player_i = DOWN;
+		music_draw(5);
 	}
-	if( Key[ KEY_INPUT_D ]  == 1&& map_kensa(player_x,player_y-1) != 1 ){      //上移動
+	if( Key[ KEY_INPUT_W ]  == 1&& map_kensa(player_x,player_y-1) != 1 ){      //上移動
 		player_y--;
 		map_henka(player_x,player_y+1);
 		player_i = UP;
+		music_draw(5);
 	}
 	if(map_kensa(player_x,player_y) == 2){//プレイヤーが地雷マスを踏んだ場合
 		map_atari(player_x,player_y);
@@ -85,6 +91,7 @@ void player_draw(){//プレイヤーの描画
 		 DrawGraph( player_x*32, player_y*32, player_imag[2], TRUE );
 		 break;
 	}
+	DrawGraph(430,220,player_re,TRUE);
 }
 void player_scean(int player_s){
 	player_f = player_s;

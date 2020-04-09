@@ -12,7 +12,7 @@ void time_updata(int i){//ƒXƒRƒA‰ÁZ
 	
 }
 void time_draw(){//ŠÔ‚ÆƒXƒRƒA‚Ì•`‰æ
-	DrawFormatString(450,100,GetColor(255,255,255),"%d•b",40-(GetNowCount()-starttime)/1000);
+	DrawFormatString(450,100,GetColor(255,255,255),"%d•b",30-(GetNowCount()-starttime)/1000);
 	DrawFormatString(450,150,GetColor(255,255,255),"SCORE");
 	DrawFormatString(450,200,GetColor(255,255,255),"%d",score);
 }
@@ -20,7 +20,7 @@ void time_fin(){
 	// 40•bŒã‚ÉƒQ[ƒ€‚ğI—¹‚µ‚Ü‚·B
 // 1•b=1000 40•b=40000
 // ŠJnŠÔ‚©‚ç4000‚Ì·‚ª‚ ‚ê‚Îƒ‹[ƒv‚µ‚È‚­‚È‚è‚Ü‚·B
-	if(GetNowCount()-starttime >40000) player_scean(3);
+	if(GetNowCount()-starttime >30000) player_scean(3);
 }
 int score_fin(){//ƒXƒRƒA‚Ìƒ‰ƒ“ƒN‚ğİ’è‚·‚é
 	if(score >= 2400) return 2;

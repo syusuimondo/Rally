@@ -6,7 +6,7 @@ void title_init();
 void title_updata();
 
 //
-void title_draw(int ti);
+void title_draw();
 //
 void title_fin();
 #endif

@@ -1,0 +1,9 @@
+﻿2020/01/13 13:05:12 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\配信\Rally_設定\GameProg.vcxproj" (build ターゲット)。
+       プロジェクト ファイルに ToolsVersion="15.0" が含まれています。このツールセットが不明であるか、存在しない可能性があります。その場合は、適切なバージョンの MSBuild をインストールして解決するか、ビルドがポリシー上の理由により特定の ToolsVersion を使用するよう強制されている可能性があります。プロジェクトを ToolsVersion="4.0" として扱います。詳細については、http://go.microsoft.com/fwlink/?LinkId=291333 を参照してください。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\Microsoft.Cpp.Win32.Targets(518,5): error MSB8008: 指定したプラットフォーム ツールセット (v141) はインストールされていないか無効です。サポートされている PlatformToolset 値が選択されていることを確認してください。
+     1>プロジェクト "C:\配信\Rally_設定\GameProg.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:00.00
